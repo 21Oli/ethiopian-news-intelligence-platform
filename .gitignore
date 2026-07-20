@@ -42,3 +42,7 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+# Scraped data
+data/raw/*.csv
+data/processed/*.csv
+data/urls/*.csv
