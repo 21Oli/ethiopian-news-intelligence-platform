@@ -2,39 +2,41 @@
 .venv/
 venv/
 
+# Environment
+.env
+
 # Python
 __pycache__/
 *.py[cod]
-*.pyo
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Environment
-.env
-
-# VS Code
+# IDE
 .vscode/
-
-# PyCharm
 .idea/
 
-# Data
+# Data files
+data/raw/*.csv
+data/processed/*.csv
+data/interim/*.csv
+data/urls/*.csv
+
+# Scraper data
+crawler/data/*.csv
+# Scraped and generated data
+crawler/data/
 data/raw/
-data/interim/
 data/processed/
+data/validation/
+data/interim/
+data/urls/
 
 # Logs
 logs/
 
-# OS
-.DS_Store
-Thumbs.db
-
 # Testing
 .pytest_cache/
-
-# Coverage
 .coverage
 htmlcov/
 
@@ -42,7 +44,7 @@ htmlcov/
 dist/
 build/
 *.egg-info/
-# Scraped data
-data/raw/*.csv
-data/processed/*.csv
-data/urls/*.csv
+
+# OS
+.DS_Store
+Thumbs.db
